@@ -1,0 +1,10 @@
+{
+  "name": "Que-jugamos-hoy?",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

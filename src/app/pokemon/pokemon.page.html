@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Pokemon Escarlata y Purpura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <img alt="pkmsp" src="assets/img/222.png"/>
+    <ion-title>Pokemon Escarlata y Purpura</ion-title>
+      <br>
+      <h4>Nintendo Switch - Un solo jugador/cooperativo 4 jugadores</h4>
+      <br>
+      <div>Mientras viajas por la región de Paldea, vivirás tres historias que se entrelazarán durante tu aventura. 
+        <br>En la Travesía de la victoria, visitarás distintos gimnasios para hacerte con el rango de Campeón o Campeona. 
+        <br>En la Senda legendaria, te unirás a Damián para buscar ingredientes muy difíciles de encontrar. 
+        <br>Por último, en la Vía Stardust, tendrás que plantarle cara al Team Star, un grupo de granujas que se dedican a 
+        sembrar el caos en la academia.</div>
+  </ion-grid>
+  <br>
+  <br>
+  <br>
+
+
+  <ion-content>
+    <p> Sprite Pokemon</p>
+      <div>Ingresa el nombre de tu pokemon preferido  y visualiza sus datos.</div>
+      <br>
+      <div>(Prueba con Pikachu por ejemplo.)</div>
+      <br>
+
+    <input type="text" [(ngModel)]="names" (ngModelChange)="convertToLowerCase($event)">    
+    <ion-button (click)="search()" color="medium" >Buscar</ion-button>
+    <br>
+    <ion-card>
+      
+      <ion-card-content>
+        <ion-label>Nombre: {{ nombre }}</ion-label>
+        <br>
+        <ion-label> Numero pokedex: {{ Npokedex }} </ion-label>
+        <br>
+        <ion-label> Tipos: {{ pokemonTypes }} </ion-label>
+        <br>
+        <h4>Sprite normal</h4>
+        <ion-img [src]="urlImage"></ion-img>
+        <ion-img [src]="urlImage2"></ion-img>
+        <h4>Sprite Shiny</h4>
+        <ion-img [src]="urlImage3"></ion-img>
+        <ion-img [src]="urlImage4"></ion-img>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
+
+
+  
