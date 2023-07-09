@@ -21,7 +21,7 @@ export class LoginPage {
 
  
   
-  constructor(private navCtrl: NavController, private databaseService: DatabaseService, private toastController: ToastController, private authService: AuthService) {}
+  constructor(private navCtrl: NavController, private databaseService: DatabaseService, private toastController: ToastController) {}
 
   async login() {
     if (this.username && this.password) { // Verificar si los campos no están vacíos
